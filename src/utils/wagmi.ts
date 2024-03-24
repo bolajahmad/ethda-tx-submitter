@@ -53,14 +53,12 @@ const defaultConfig = getDefaultConfig({
   // Required API keys
   walletConnectProjectId,
   transports: {
-    [mainnet.id]: http(
-      `https://eth-mainnet.g.alchemy.com/v2/rF-6AV8NLKU0rplUexndZU5g5-ZnAaiu`
-    ),
+    [mainnet.id]: http(`https://eth-mainnet.g.alchemy.com/v2/rF--ZnAaiu`),
   },
   // Optional
   appDescription: "As an Ethereum L2 network",
   appUrl: "https://family.co",
-  // alchemyId: 'rF-6AV8NLKU0rplUexndZU5g5-ZnAaiu',
+  // alchemyId: 'rF--ZnAaiu',
 });
 
 const wagmiConfig = createConfig(defaultConfig as any);
